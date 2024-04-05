@@ -2,7 +2,7 @@ import os
 import shutil
 
 
-def rm_pycache(path: str=None, stdout: bool=False) -> None | Exception:
+def rm_pycache(path: str=None, stdout: bool=False) -> None:
     """
     Delete all __pycache__ directories in the specified path.
 
@@ -14,7 +14,7 @@ def rm_pycache(path: str=None, stdout: bool=False) -> None | Exception:
     :type stdout: bool
     :default stdout: False
 
-    :return: None | Exception
+    :return: None
 
     >>> rm_pycache(path='./src', stdout=True)
     """
